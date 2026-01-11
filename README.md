@@ -44,3 +44,14 @@ Open `gui_downloader.py` and update the download path to your preferred location
 ```python
 # Line 8
 BASE_FOLDER = r"C:\Users\YourName\Downloads"
+```
+
+Note on Cookies: The script is currently configured to use Brave Browser cookies for Instagram and generic sites to avoid bot detection. If you use Chrome, Edge, or Firefox, update this line in the code:
+
+```python
+# Change 'brave' to 'chrome', 'edge', or 'firefox'
+ydl_opts['cookies_from_browser'] = 'brave'
+```
+
+
+
